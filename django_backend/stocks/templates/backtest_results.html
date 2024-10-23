@@ -1,0 +1,6 @@
+<h1>Backtesting Results</h1>
+<p>Total Return: {{ results.total_return }}%</p>
+<p>Max Drawdown: {{ results.max_drawdown }}%</p>
+<p>Trades Executed: {{ results.trades_executed }}</p>
+<p>Final Portfolio Value: ${{ results.final_portfolio_value }}</p>
+<a href="{% url 'backtest' %}">Run Another Backtest</a>

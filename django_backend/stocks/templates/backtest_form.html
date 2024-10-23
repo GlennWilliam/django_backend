@@ -1,0 +1,16 @@
+<form method="POST">
+    {% csrf_token %}
+    <label for="symbol">Stock Symbol:</label>
+    <input type="text" name="symbol" required><br>
+
+    <label for="investment">Initial Investment:</label>
+    <input type="number" name="investment" required><br>
+
+    <label for="short_window">Short Moving Average Window (e.g., 50):</label>
+    <input type="number" name="short_window" required><br>
+
+    <label for="long_window">Long Moving Average Window (e.g., 200):</label>
+    <input type="number" name="long_window" required><br>
+
+    <button type="submit">Run Backtest</button>
+</form>
